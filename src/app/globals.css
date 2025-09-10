@@ -1,26 +1,58 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+/* Lightmode (default) */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+    --background: #ffffff;
+    --foreground: #171717;
+    --card: #f3f4f6;
+    --card-contrast: #e5e7eb;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+    background: var(--background);
+    color: var(--foreground);
+    font-family: 'Roboto', sans-serif;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Darkmode */
+.dark {
+    --background: #18181b;
+    --foreground: #f3f4f6;
+    --card: #23232a;
+    --card-contrast: #2d2d36;
+}
+
+.dark body {
+    background: var(--background);
+    color: var(--foreground);
+}
+
+/* Beispiel für Karten oder Boxen */
+.bg-card {
+    background-color: var(--card);
+}
+
+.dark .bg-card {
+    background-color: var(--card);
+}
+
+/* Beispiel für Kontrastflächen */
+.bg-card-contrast {
+    background-color: var(--card-contrast);
+}
+
+.dark .bg-card-contrast {
+    background-color: var(--card-contrast);
+}
+
+/* Animationen */
+.animate-fade-in-scale {
+  animation: fadeInScale 0.35s cubic-bezier(0.4,0,0.2,1);
+}
+
+@keyframes fadeInScale {
+  from { opacity: 0; transform: scale(0.95); }
+  to   { opacity: 1; transform: scale(1); }
 }
