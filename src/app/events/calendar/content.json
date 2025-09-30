@@ -1,1 +1,22 @@
-{}
+{
+  "de": {
+    "home": {
+      "title": "VCS",
+      "welcome": "Willkommen bei der Vereinigung der Chemiestudierenden an der ETH Zürich",
+      "langSwitch": "English",
+      "heroAlt": "VCS Hintergrund",
+      "intro1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "intro2": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    }
+  },
+  "en": {
+    "home": {
+      "title": "VCS",
+      "welcome": "Welcome to VCS – your partner for custom woodwork, bespoke furniture, and high-quality interior fittings. Discover our passion for craftsmanship!",
+      "langSwitch": "Deutsch",
+      "heroAlt": "VCS background",
+      "intro1": "As a student organization based in Zurich, we design living and working spaces with function, quality, and style. Our range of services includes academic support, networking events, and professional development – all implemented professionally, precisely, and with state-of-the-art resources.",
+      "intro2": "Whether you're a student, faculty member, or industry professional, we invite you to explore our offerings and join our vibrant community. Let's shape the future of chemistry together!"
+    }
+  }
+}
