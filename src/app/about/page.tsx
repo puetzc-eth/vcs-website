@@ -1,3 +1,3 @@
 export default function Safety() {
-  return <div>Safety</div>;
+  return <div>Safety Hello Connor</div>;
 }
