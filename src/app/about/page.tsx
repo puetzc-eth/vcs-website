@@ -2,10 +2,10 @@
 
 import Image from 'next/image';
 import { useState } from 'react';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import styles from './page.module.css';
-import content from './content.json' assert { type: "json" };
+import Header from './../components/Header';
+import Footer from './../components/Footer';
+import styles from './../page.module.css';
+import content from './../content.json' assert { type: "json" };
 
 export default function Home() {
     const [lang, setLang] = useState<"de" | "en">("de");
